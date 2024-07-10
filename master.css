@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family:  sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(47, 121, 109);
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.links {
+  display: flex;
+}
+
+.links li {
+  margin-left: 20px;
+}
+
+.links a {
+  color: #fff;
+  padding: 5px 10px;
+}
+
+.links a:hover {
+  background-color: #fff;
+  color:rgb(47, 121, 109) ;
+  border-radius: 20px;
+}
+
+.menue {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menue .line {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px;
+}
+
+
+
+@media (max-width: 768px) {
+  .links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color:rgb(47, 121, 109);
+  }
+  
+  .links li {
+      margin: 10px 0;
+      text-align: center;
+  }
+
+  .links.active {
+      display: flex;
+  }
+
+  .menue {
+      display: flex;
+  }
+}
+
+
+.product {
+  width: 100%;
+  height: 140vh;
+  padding: 25px 0;
+}
+
+.product h1 {
+  margin: 35px 0;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #2f796d;
+}
+
+.product .box {
+  width: 90%;
+  margin: 0 auto;
+  grid-gap: 25px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.product .box .card {
+  width: 290px;
+  height: 440px;
+  box-shadow: 0 0 8px  #2f796d;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 20px ;
+  background: #fff;
+  margin: 10px;
+}
+
+.product .box .card .img {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.product .box .card .img img {
+  width: 150px;
+  margin: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.product .box .card .product_text h2 {
+  font-size: 30px;
+  margin-top: 15px;
+}
+
+.product .box .card .product_text p {
+  color: #2f796d;
+  margin: 8px;
+  font-weight: bold;
+}
+
